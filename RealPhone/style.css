@@ -1,0 +1,407 @@
+/* main page */
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+
+	width: 100%;
+	height: 100vh;
+	position: relative; 
+	overflow: hidden;
+	background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+ nav{
+  	width: 85%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+  } 
+
+.logo{
+	flex-basis: 20%;
+}
+.logo img{
+	  width: 180px;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li {
+	list-style: none;
+	display: inline-block; 
+	margin:0 20px;
+	position: relative;
+}
+.nav-links ul li ul{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	text-align: left;
+	padding: 10px 6px;
+	border-radius: 0px 0px 10px 10px;
+
+}
+.nav-links ul li:hover ul{
+	display: block;
+}
+.nav-links ul li ul li a{
+	color: #000;
+
+}
+.nav-links ul li ul li{
+	width: 129px;
+	border-radius: 4px;
+
+}
+.nav-links ul li ul li a:hover {
+	background-color: gray;
+	
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 14px;
+
+}
+
+.information2{
+	position: absolute;
+	right:5%;
+	bottom:5%;
+	
+
+}
+
+.Phone{
+	position: absolute;
+	top: 13%;
+	right:5%;	
+}
+
+.Phone1{
+	position: absolute;
+	right:5%;
+	bottom:32%;	
+}
+
+.Phone2{
+    position: absolute;
+	right:5%;
+	bottom:3%;
+}
+
+.Card{
+	position: absolute;
+	top: 13%;
+	right:5%;	
+}
+
+.Card1{
+	position: absolute;
+	right:5%;
+	bottom:32%;	
+}
+
+.Card2{
+    position: absolute;
+	right:5%;
+	bottom:3%;
+}
+
+.Case{
+	position: absolute;
+	top: 13%;
+	right:5%;	
+}
+
+.Case1{
+	position: absolute;
+	right:5%;
+	bottom:32%;	
+}
+
+.Case2{
+    position: absolute;
+	right:5%;
+	bottom:3%;
+}
+
+.Screen{
+	position: absolute;
+	top: 13%;
+	right:5%;	
+}
+
+.Screen1{
+	position: absolute;
+	right:5%;
+	bottom:32%;	
+}
+
+.Screen2{
+    position: absolute;
+	right:5%;
+	bottom:3%;
+}
+.information{
+	width: 1000px;
+	height:1000px;
+	position: absolute;
+	top: 50%; 
+	left: -10%;
+	transform: translateY(-50%);
+}
+.information1{
+	position: absolute;
+	top: 16%;
+	right:5%;	
+}
+
+
+#circle{
+	width: 900px;
+	height:900px; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius:50%;
+	transform: rotate(0deg);
+	transition: 1s;
+}
+
+.feature img{
+	width: 70px;	
+}
+.feature{
+	position: absolute;
+	display: flex;
+	color: #fff; 
+}
+.feature div{
+	margin-left:30px;
+}
+.feature div p{
+	margin-top: 8px;
+}
+
+.one{
+	top: 450px;
+	right: 50px; 
+}
+.two{
+	top: 150px;
+	left: 350px;
+	transform: rotate(-90deg);
+}
+.three{
+	bottom: 450px;
+	left: 50px;
+	transform: rotate(-180deg);
+}
+.four{
+	bottom:150px;
+	right: 350px;
+	transform: rotate(-270deg);
+}
+.mobile{
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 33%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.controls{
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+.controls h3{
+	margin:15px 0;
+	color: #fff;
+}
+#upBtn{
+	width: 15px;
+	cursor: pointer;
+}
+#downBtn{
+	width: 15px;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+.overlay{
+	width: 500;
+	height:500;
+	border-top: 500px solid #fff;
+	border-right: 500px solid transparent;
+	border-bottom: 500px solid #fff;
+	border-left: 500px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#about{
+	position: absolute;
+	left: 600px;
+	font-size: 16px;
+	color: #fff;
+}
+
+#contact{
+	position: absolute;
+	left: 750px;
+	font-size: 17px;
+	color: #fff;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+#button1{
+	position: absolute;
+	right: 250px;
+}
+
+#button2{
+	position: absolute;
+	right: 150px;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn, .signinbtn{
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; */
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn, .signinbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
